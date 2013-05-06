@@ -13,6 +13,9 @@ Installation for IE browser
 	- Download IE WebDriver from http://code.google.com/p/selenium/wiki/InternetExplorerDriver
 	- Extract zip file
 	- Example c:\\ie\\IEDriverServer_Win32_2.32.3\\  in directory must have file IEDriverServer.exe
+	- open file /src/test/java/com/up1/demo/TestTaradLogin
+	- goto method init() to change File file = new File(
+				"D:\\Somkiat\\research\\test\\selenium\\IEDriverServer_Win32_2.32.3\\IEDriverServer.exe");
 	
 How to run ?
 -	
