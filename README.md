@@ -17,10 +17,10 @@ Installation for IE browser
 How to run ?
 -	
 
-```git clone https://github.com/up1/Selenium_webdriver_java_tarad.git
-cd Selenium_webdriver_java_tarad
-mvn clean install
-```
+     git clone https://github.com/up1/Selenium_webdriver_java_tarad.git
+     cd Selenium_webdriver_java_tarad
+     mvn clean install
+
 
 Let's go to Selenium WebDriver's World ...
  
