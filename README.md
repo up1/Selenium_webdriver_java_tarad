@@ -1,4 +1,26 @@
-Selenium_webdriver_java_tarad
+How to using Selenium webdriver with Java
 =============================
 
-Using selenium webdriver with Java
+Software Requirement
+-
+
+	- JDK 1.6 +
+	- Apache Maven
+
+Installation for IE browser
+-
+
+	- Download IE WebDriver from http://code.google.com/p/selenium/wiki/InternetExplorerDriver
+	- Extract zip file
+	- Example c:\\ie\\IEDriverServer_Win32_2.32.3\\  in directory must have file IEDriverServer.exe
+	
+How to run ?
+-	
+
+```git clone https://github.com/up1/Selenium_webdriver_java_tarad.git
+cd Selenium_webdriver_java_tarad
+mvn clean install
+```
+
+Let's go to Selenium WebDriver's World ...
+ 
