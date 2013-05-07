@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,7 +26,7 @@ public class TestTaradSuperSaleGame {
 
 	public void init() {
 		String PROXY = "devproxy1.ext.corp:8000";
-		org.openqa.selenium.Proxy proxy = new org.openqa.selenium.Proxy();
+		Proxy proxy = new Proxy();
 		proxy.setHttpProxy(PROXY).setFtpProxy(PROXY).setSslProxy(PROXY);
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(CapabilityType.PROXY, proxy);
@@ -118,7 +119,7 @@ public class TestTaradSuperSaleGame {
 		init();
 		driver.get(SLOTGAME_URL);
 		driver.findElement(By.id("username")).sendKeys("somkiat_pui");
-		driver.findElement(By.id("password")).sendKeys("42112121");
+		driver.findElement(By.id("password")).sendKeys("somkiat_pui");
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("$('div#button-login').click();", driver.findElement(By.id("button-login")));
 		
@@ -134,7 +135,7 @@ public class TestTaradSuperSaleGame {
 		init();
 		driver.get(SLOTGAME_URL);
 		driver.findElement(By.id("username")).sendKeys("somkiat_pui");
-		driver.findElement(By.id("password")).sendKeys("42112121");
+		driver.findElement(By.id("password")).sendKeys("somkiat_pui");
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("$('div#button-login').click();", driver.findElement(By.id("button-login")));
 		
